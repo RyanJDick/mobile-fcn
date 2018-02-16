@@ -1,0 +1,19 @@
+{
+    "data_index_file": "../data/kitti_road/train_split_files.txt",
+    "scaled_img_height": 384,
+    "scaled_img_width": 1248,
+    "classes": [[255, 0, 255], [255, 0, 0]],
+    "test_size": 0.2,
+    "log_dir": "../output/mobilenet_fcn_kitti/logs/",
+    "model": "mobilenet_fcn",
+    "base_checkpoint_filename": "../checkpoints/mobilenet_fcn/mobilenet/mobilenet_v1_1.0_224_2017_06_14/mobilenet_v1_1.0_224.ckpt",
+    "trained_checkpoint_filename": "../output/mobilenet_fcn_kitti/trained_checkpoint/mobilenet_fcn_kitti_trained.ckpt",
+    "restore_from_trained_checkpoint": false,
+    "learning_rate": 0.0001,
+    "momentum": 0.95,
+    "train_steps_between_validation": 100,
+    "test_data_index_file": "../data/kitti_road/test_split_files.txt",
+    "test_output_image_folder": "../output/mobilenet_fcn_kitti/test_output_images/",
+    "prediction_input_file": "../data/kitti_road/test_split_files.txt",
+    "prediction_output_folder": "../output/mobilenet_fcn_kitti/pred_output_images/"
+}
